@@ -1,0 +1,7 @@
+nasm -f elf64 lab1.asm -o lab1.o
+ld lab1.o -o lab1
+./lab1
+
+
+nasm -f elf64 -g lab1.asm -o lab1.o
+ld lab1.o -o lab1

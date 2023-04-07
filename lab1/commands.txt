@@ -1,0 +1,67 @@
++run
+Starting program: /home/ubuntu/oac/lab1/lab1 
+[Inferior 1 (process 6612) exited normally]
++info registers
+The program has no registers now.
++i r rax
+The program has no registers now.
++info variables
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000402000  firstmsg
+0x000000000040200a  resultmsg
+0x0000000000402032  arreglo
+0x000000000040204a  solution
+0x0000000000402052  mayor
+0x000000000040205a  char
+0x0000000000402062  __bss_start
+0x0000000000402062  _edata
+0x0000000000402068  _end
++b 141
+No line 141 in the current file.
++break final
+Breakpoint 1 at 0x40112d
++run
+Starting program: /home/ubuntu/oac/lab1/lab1 
+
+Breakpoint 1, 0x000000000040112d in final ()
++info registers
+rax            0x1                 1
+rbx            0x0                 0
+rcx            0x40112b            4198699
+rdx            0x1                 1
+rsi            0x40204a            4202570
+rdi            0x1                 1
+rbp            0x0                 0x0
+rsp            0x7fffffffdf60      0x7fffffffdf60
+r8             0x3c                60
+r9             0x5                 5
+r10            0x3                 3
+r11            0x206               518
+r12            0xa                 10
+r13            0x0                 0
+r14            0x0                 0
+r15            0x0                 0
+rip            0x40112d            0x40112d <final>
+eflags         0x246               [ PF ZF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
++info variables
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000402000  firstmsg
+0x000000000040200a  resultmsg
+0x0000000000402032  arreglo
+0x000000000040204a  solution
+0x0000000000402052  mayor
+0x000000000040205a  char
+0x0000000000402062  __bss_start
+0x0000000000402062  _edata
+0x0000000000402068  _end
++q
